@@ -1,13 +1,14 @@
 /* The device with borders */
 .smartphone {
     position: relative;
-    width: 360px;
-    height: 640px;
+    width: 350px;
+    height: 630px;
     margin: auto;
     border: 16px black solid;
     border-top-width: 60px;
     border-bottom-width: 60px;
     border-radius: 36px;
+    background-color: #151515;
   }
   
   /* The horizontal line on the top of the device */
@@ -43,4 +44,14 @@
     width: 360px;
     height: 640px;
     background: white;
+  }
+
+/* Mobile Devices */
+  @media screen and (max-width: 480px) {
+    .smartphone {
+      width: 360px;
+      height: 650px;
+    }
+
+    
   }
