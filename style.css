@@ -1,57 +1,52 @@
-/* The device with borders */
-.smartphone {
-    position: relative;
-    width: 350px;
-    height: 630px;
-    margin: auto;
-    border: 16px black solid;
-    border-top-width: 60px;
-    border-bottom-width: 60px;
-    border-radius: 36px;
-    background-color: #151515;
-  }
-  
-  /* The horizontal line on the top of the device */
-  .smartphone:before {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 5px;
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #333;
-    border-radius: 10px;
-  }
-  
-  /* The circle on the bottom of the device */
-  .smartphone:after {
-    content: '';
-    display: block;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    left: 50%;
-    bottom: -65px;
-    transform: translate(-50%, -50%);
-    background: #333;
-    border-radius: 50%;
-  }
-  
-  /* The screen (or content) of the device */
-  .smartphone .content {
-    width: 360px;
-    height: 640px;
-    background: white;
-  }
+ *, *::before, *::after {
+     box-sizing: content-box;
+     font-family: 'Poppins';
+     font-weight: normal;
+ }
 
-/* Mobile Devices */
-  @media screen and (max-width: 480px) {
-    .smartphone {
-      width: 360px;
-      height: 650px;
+body {
+     padding: 0;
+     margin: 0;
+     background: linear-gradient(to right, #d3d3d3, #c0c0c0);
+ }
+
+ .calculator-grid {
+     display: grid;
+     justify-content: center;
+     align-content: center;
+     min-height: 100vh;
+     grid-template-columns: repeat(4, 100px);
+     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+ }
+
+ .calculator-grid > button {
+     cursor: pointer;
+     font-size: 2rem;
+     border: 1px solid #000;
+     outline: none;
+     background-color: #151515;
     }
 
-    
-  }
+    .calculator-grid > button:hover {
+        background-color: #d3d3d3;
+    }
+.functions_span {
+    grid-column: span 2;
+
+}
+
+.output {
+    grid-column: 1/ -1;
+    background-color:rgb(40, 40, 41);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .previous-operand {
+    color: rgaa(255, 255, 255, .75);
+    font-size: 2.5rem;  
+}
