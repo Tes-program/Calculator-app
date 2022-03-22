@@ -18,7 +18,7 @@ class Calculator {
 // Function for the number inputs
     appendNumber(number) {
         if (number === '_' && this.currentOperand.includes('.')) return
-        this.currentOperand = this.currentOperand + number
+        this.currentOperand = this.currentOperand.toString() + this.number.toString()
 
     }
 // Function for each operator
