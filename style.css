@@ -156,6 +156,7 @@ body {
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
+    font-size: 2rem;
 }
 .output .previous-operand {
     color: rgaa(255, 255, 255, .75);
