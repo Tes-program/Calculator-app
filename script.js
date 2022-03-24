@@ -1,3 +1,4 @@
+// Start of the Code for the Standard Calculator
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
       this.previousOperandTextElement = previousOperandTextElement
@@ -160,4 +161,5 @@ class Calculator {
     }
   
   });
+  // End of the Code for the Standard Calculator
   
