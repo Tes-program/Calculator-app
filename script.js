@@ -5,17 +5,17 @@ class Calculator {
       this.currentOperandTextElement = currentOperandTextElement
       this.clear()
     }
-  
+  // Function to clear an operation or whatever is done on the calculator
     clear() {
       this.currentOperand = ''
       this.previousOperand = ''
       this.operation = undefined
     }
-  
+  // Functon to delete an operation or number on the screen
     delete() {
       this.currentOperand = this.currentOperand.toString().slice(0, -1)
     }
-  
+  // Function to display and also allow only one decimal point to be added
     appendNumber(number) {
       if (number === '.' && this.currentOperand.includes('.')) return
       this.currentOperand = this.currentOperand.toString() + number.toString()
@@ -46,7 +46,7 @@ class Calculator {
         case '*':
           computation = prev * current
           break
-        case '÷':
+        case '/':
           computation = prev / current
           break
         default:
