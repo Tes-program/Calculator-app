@@ -7,41 +7,39 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href='https://fonts.googleapis.com/css2?family=Poppins' rel='stylesheet'>
-    <script src="script.js" defer></script>
+    <script src="js/script2.js" defer></script>
     <title>Scientific Calculator</title>
 
 
 </head>
 <body>
-    <nav>
-        <h2>Scientific Calculator</h2>
-         <input id="toggle" type="checkbox" checked>
-      <ul>
+    <!-- <nav>
+        <h2>Scientific Calculator</h2> -->
+         <!-- <inp id="toggle" type="checkbox" checked> -->
+      <!-- <ul>
         <li><a href="index.html">Standard Calculator</a></li>
         <li><a href="currency_converter.html">Currency Converter</a></li>
       </ul>
-   </nav>
+   </nav> -->
     <div class="calculator-grid2">
-    
-        <div class="output">
-            <div data-previous-operand class="previous-operand"></div>
-            <div data-current-operand class="current-operand"></div>
-        </div>
-        <button data-delete class="functions">DEL</button>
-        <button data-all-clear class="functions">AC</button>
-        <button data-bracket class="functions">()</button>
-        <button data-log class="functions">log</button>
-        <button data-trig-sin class="functions">sin</button>
-        <button data-trig-cos class="functions">cos</button>
-        <button data-trig-tan class="functions">tan</button>
-        <button data-gradient class="functions">Grd</button>
-        <button data-degree class="functions">Deg</button>
-        <button data-radian class="functions">Rad</button>
-        <button data-hyperbole-trig-cos class="functions">cosh</button>
-        <button data-hyperbole-trig-tan class="functions">tanh</button>
-        <button data-hyperbole-trig-sin class="functions">sinh</button>
-        <button data-power class="functions">x2</button>
-        <button data-expoent class="functions">x^y</button>
+    <div class="output">
+        <input type="text" id="screen" maxlength="20">
+    </div>
+        <button data-trigger class="functions">DEL</button>
+        <button data-trigger class="functions">AC</button>
+        <button data-scientific class="functions">%</button>
+        <button data-scientific class="functions">log</button>
+        <button data-scientific class="functions">sin</button>
+        <button data-scientific class="functions">cos</button>
+        <button data-scientific class="functions">tan</button>
+        <button data-scientific class="functions">Ln</button>
+        <button data-scientific class="functions">Deg</button>
+        <button data-scientific class="functions">Rad</button>
+        <button data-scientific class="functions">cosh</button>
+        <button data-scientific class="functions">tanh</button>
+        <button data-scientific class="functions">sinh</button>
+        <button data-scientific class="functions">x2</button>
+        <button data-scientific class="functions">x^y</button>
         <button data-number class="functions">1</button>
         <button data-number class="functions">2</button>
         <button data-number class="functions">3</button>
@@ -55,12 +53,12 @@
         <button data-number class="functions">9</button>
         <button data-number class="functions">0</button>
         <button data-number class="functions">.</button>
-        <button data-square-root class="functions">x√y</button>
+        <button data-scientific="" class="functions">x√y</button>
         <button data-operation class="functions">*</button>
         <button data-percentage class="functions">%</button>
-        <button data-pie class="functions">π</button>
-        <button data-log-expotent class=functions>e^</button>
-        <button data-equals class="functions">=</button>
+        <button data-scientific class="functions">π</button>
+        <button data-scientific class=functions>e</button>
+        <button data-trigger class="functions">=</button>
         <button data-operation class="functions">-</button>
 
     
