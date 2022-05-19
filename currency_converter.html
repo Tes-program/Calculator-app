@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="style/style2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <script src="js/script3.js"></script>
 </head>
 <body>
@@ -17,6 +19,39 @@
         <li><a href="scientifc.html">Scientific Calculator</a></li>
       </ul>
    </nav>
-   <h1>Currency Converter</h1>
+   <div class="wrapper">
+    <h1>Currency Converter</h1>
+    <form action="#">
+      <div class="amount">
+        <p>Enter your Amount</p>
+        <input class ="amount-input" type ="text" placeholder ="Input amount here">
+       </div>
+       <div class="drop-list">
+         <div class="from">
+           <p>From</p>
+           <div class="select-box">
+             <select>
+               <option value="USD">USD</option>
+               <option value = "NGN">NGN</option>
+             </select>
+           </div>
+         </div>
+         <div class="icons"><i class= "material-icons">currency_exchange</i></div>
+         <div class="to">
+          <p>To</p>
+          <div class="select-box">
+            <select>
+              <option value="GBP">GBP</option>
+              <option value = "CHN">CHN</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="exchange-rate">1 USD = 0.8GBP</div>
+      <button>Get Exchange Rate</button>
+       </div>
+    </form>
+   </div>
 </body>
+<script src="js/country-list.js"></script>
 </html>
